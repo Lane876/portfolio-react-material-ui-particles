@@ -23,6 +23,7 @@ import {
   ContactMail,
 } from "@material-ui/icons";
 import avatar from "../avatar.png";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
@@ -46,18 +47,22 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: "/resume",
   },
   {
     listIcon: <Apps />,
     listText: "Portfolio",
+    listPath: "/portfolio",
   },
   {
     listIcon: <ContactMail />,
     listText: "Contact",
+    listPath: "/projects",
   },
 ];
 const Navbar = () => {
@@ -81,7 +86,7 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuItems.map((lstItem, key) => (
-          <ListItem button key={key}>
+          <ListItem button key={key} component={Link} to={lstItem.listPath}>
             <ListItemIcon className={classes.listItem}>
               {lstItem.listIcon}
             </ListItemIcon>

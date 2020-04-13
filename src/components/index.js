@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles({
   particlesStyle: {
     position: "absolute",
+    opacity: "0.3",
   },
 });
 
@@ -29,14 +30,14 @@ const Home = () => {
               },
             },
             shape: {
-              type: "circle",
+              // type: "circle",
               strole: {
                 width: "1",
-                color: "tomato",
+                color: "blue",
               },
             },
             size: {
-              value: 8,
+              value: 2,
               random: true,
               anim: {
                 enable: true,
