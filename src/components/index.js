@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <Navbar />
       <Header />
-      <Particles
+      {/* <Particles
         canvasClassName={classes.particlesStyle}
         params={{
           particles: {
@@ -58,7 +58,7 @@ const Home = () => {
             },
           },
         }}
-      />
+      /> */}
     </>
   );
 };
