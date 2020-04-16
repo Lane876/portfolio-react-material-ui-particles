@@ -136,7 +136,7 @@ const Resume = () => {
               Where Ive worked
             </Typography>
             <Typography
-              variant="subtitle"
+              variant="subtitle1"
               align="center"
               style={{ color: "tan" }}
             >
@@ -167,7 +167,7 @@ const Resume = () => {
               Where Ive worked
             </Typography>
             <Typography
-              variant="subtitle"
+              variant="subtitle1"
               align="center"
               style={{ color: "tan" }}
             >
@@ -198,7 +198,7 @@ const Resume = () => {
               Where Ive worked
             </Typography>
             <Typography
-              variant="subtitle"
+              variant="subtitle1"
               align="center"
               style={{ color: "tan" }}
             >
